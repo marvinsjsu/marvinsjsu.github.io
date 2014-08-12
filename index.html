@@ -7,300 +7,171 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
     <link href='http://fonts.googleapis.com/css?family=PT+Serif|Muli' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400|Comfortaa:400,300,700|Varela+Round' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main2.css">
   </head>
   <body>
+
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <ul class="nav navbar-nav navbar-left">
+            <li><a class="controls" target="myself" href="#"><img class="main-icon" src="images/bluem.png"/>arvin  <img class="main-icon" src="images/greenm.png"/> ante</a></li>
+          </ul>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a class="controls" target="projects" href="#">projects</a></li>
+            <li><a class="controls" target="resume" href="#">resume</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
     <div class="container-fluid">
+
       <div class="row">
         <div class="col-xs-2">
         </div>
         <div class="col-xs-8">
-          <div class="head-banner">
-            <br/>
-            <br/>
-
-            <h1><a href="#" class="control" target="myself">Marvin Mante</a></h1>
-
-            <div id="main-navigation" class="btn-group">
-              <!--<button type="button" class="btn btn-link btn-lg">a bit about me</button>-->
-              <button target="projects" type="button" class="btn btn-link btn-md controls">my projects</button>
-              <button target="resume" type="button" class="btn btn-link btn-md controls">resume</button>
-              <button target="contact" type="button" class="btn btn-link btn-md controls">contact me</button>
-            </div>
-          </div>
           <br/>
           <div id="myself" class="content">
             <br/>
             <br/>
-
+            <br/>
             <p>
               Hello! I'm a web developer falling for Javascript.  I've recently graduated from
               <a href="http://www.appacademy.io" target="_blank">App Academy</a> in San Francisco, where I completed <a class="control" target="projects" href="#">projects</a>
               in Ruby, Rails, Javascript, Node, and Backbone.
               I believe web development is a melding of logic and creativity and the beauty therein is what I'm passionate about.
             </p>
+            <br/>
+            <div class="centered small">
+              <a href="mailto:marvinsjsu@gmail.com"><img class="icon" src="images/email.png"/></a>
+              <a href="http://www.linkedin.com/pub/marvin-mante/2/523/633/" target="_blank"><img class="icon" src="images/linkedin2.png"/></a>
+              <a href="https://github.com/marvinsjsu" target="_blank"><img class="icon" src="images/github.png"/></a>
+            </div>
           </div>
+
 
           <div id="projects" class="content">
             <div class="row">
-              <div class="col-xs-4">
+              <div class="project-item row">
+                <div class="col-xs-6">
+                  <a href="http://www.kicksmix.in" target="_blank"><img class="project-img shadow" src="images/kicksmix_index.jpg" /></a>
+                  <div class="details-container" id="kicksmix-details">
+                    <br/>
+                    <p class="centered">
+                      <a class="centered small" href="https://github.com/marvinsjsu/KicksMix" title="kicksmix github link">
+                        <img src="images/github.png"/>
+                      </a>
+                      <a class="centered medium" href="http://www.kicksmix.in" title="kicksmix link">
+                        <img src="images/logo.png">
+                      </a>
+                    </p>
 
-                <div class="panel panel-default shadow">
-                  <div class="panel-body">
-                    <div class="thumbnail">
-                      <a href="http://www.kicksmix.in" target="_blank"><img src="images/kicksmix.jpg" alt="..."></a>
-                    </div>
-                    <div class="caption">
-                      <p class="small">
-                         Dedicated to a subculture of shoes.  KicksMix is a social site that promotes the expression of ideas
-                         and conversation on kicks.
-                         <br/>
-                         <button target="kicksmix-details" type="button" class="btn btn-link btn-small details-toggle">more details ...</button>
-                      </p>
-                      <div class="details-container" id="kicksmix-details">
-                        <h4 class="small centered">Components</h4>
-                        <ul class="list-group small">
-                          <li class="list-group-item">User authentication and session management</li>
-                          <li class="list-group-item">Rails API / jBuilder</li>
-                          <li class="list-group-item">Backbone (CompositeView and SubViews)</li>
-                          <li class="list-group-item">jQuery / jQuery UI / Bootstrap (Simplex theme)</li>
-                          <li class="list-group-item">Paperclip, Heroku, and S3 (photo storage)</li>
-                        </ul>
-                        <p class="centered">
-                          <a class="centered small" href="https://github.com/marvinsjsu/KicksMix" title="my github link">
-                            <img src="images/github.png"/>
-                          </a>
-                          <a class="centered medium" href="http://www.kicksmix.in" title="kicksmix link">
-                            <img src="images/logo.png">
-                          </a>
-                        </p>
-                      </div>
-                    </div>
+                    <h4 class="small centered">Components</h4>
+                    <ul class="list-group small">
+                      <li class="list-group-item">User authentication and session management</li>
+                      <li class="list-group-item">Rails API / jBuilder</li>
+                      <li class="list-group-item">Backbone (CompositeView and SubViews)</li>
+                      <li class="list-group-item">Polymorphism for commentable models</li>
+                      <li class="list-group-item">jQuery / jQuery UI / Bootstrap (Simplex theme)</li>
+                      <li class="list-group-item">Paperclip, Heroku, and S3 (photo storage)</li>
+                    </ul>
                   </div>
-                  <div class="panel-footer centered">KicksMix</div>
+                </div>
+                <div class="col-xs-6">
+                  <h4>kicksmix</h4>
+
+                  <p class="small">
+                     Dedicated to a subculture of shoes.  KicksMix is a social site that promotes the expression of ideas
+                     and conversation through kicks.
+                     <br/>
+                     <button target="kicksmix-details" type="button" class="btn btn-link btn-small details-toggle">more details ...</button>
+                  </p>
+                  <div class="details-container" id="kicksmix-details-summary">
+                    <h4 class="small centered">Summary</h4>
+                    <p class="small">
+                      KicksMix is my final project for App Academy.  My intention for this project was to keep the interface simple
+                      and focus on implementing as many back-end features I could within 11 days.  It starts with the user login and
+                      session management.  This allows a user to register and login to the site, otherwise, the collection of shoes
+                      comments, and mixes is on display, yet adding comments and mixes is only available once the user logs in.
+                    </p>
+
+                    <p class="small">
+                      During the implementation of user, shoe, and comment models, I realized these models need to be Polymorphic, as
+                      I wanted each object to be "commentable".  This helped me avoid creating additional tables to keep track of comments for each of my models. In addition, as my comment model is "commentable" it worked very well for having infinitely-nested comments, where I implemented the recursion via jBuilder partials.
+                    </p>
+
+                    <p class="small">
+                      The client-side is implemented with Backbone.  We learned the CompositeView pattern in class, so it's on this
+                      project in varying degrees.  What I mean is that some elements are implemented as subviews as I wanted to see
+                      for myself the pros and cons of how deep to go about in doing subviews.  This helped to learn more about event
+                      bubbling.
+                    </p>
+
+                    <p class="small">
+                      There are still many items on my to-do list for this project; so it is a work-in-progress as I try to fix some
+                      bugs, add some more features like tagging, and clean-up the CSS and displays.  Also, for client-side session/user
+                      management, I implemented bootstrapping technique, and will need to be replaced with a more secure implementation.
+                    </p>
+
+                  </div>
                 </div>
               </div>
 
-              <div class="col-xs-4">
 
-                <div class="panel panel-default shadow">
-                  <div class="panel-body">
-                    <div class="thumbnail">
-                      <img src="images/kicksmix.jpg" alt="...">
-                    </div>
-                    <div class="caption">
-                      <p class="small">
-                         A clone of the task management app Trello. This version takes the basic functionality of
-                         creating boards, adding cards, items, and lists.
-                         <br/>
-                         <button target="trellino-details" type="button" class="btn btn-link btn-small details-toggle">more details ...</button>
-                      </p>
-                      <div class="details-container" id="trellino-details">
-                        <h4 class="small centered">Components</h4>
-                        <ul class="list-group small">
-                          <li class="list-group-item">User authentication and session management</li>
-                          <li class="list-group-item">Rails API / jBuilder</li>
-                          <li class="list-group-item">Backbone (CompositeView and SubViews)</li>
-                          <li class="list-group-item">jQuery / jQuery UI / Bootstrap (Simplex theme)</li>
-                          <li class="list-group-item">Paperclip, Heroku, and S3 (photo storage)</li>
-                        </ul>
-                        <p class="centered">
-                          <a class="centered small" href="https://github.com/marvinsjsu/KicksMix" title="my github link">
-                            <img src="images/github.png"/>
-                          </a>
-                          <a class="centered medium" href="http://www.kicksmix.in" title="kicksmix link">
-                            <img src="images/logo.png">
-                          </a>
-                        </p>
-                      </div>
-                    </div>
+              <div class="project-item row">
+                <div class="col-xs-6">
+                  <a href="http://www.marvinmante.io/Asteroids" target="_blank"><img class="project-img shadow" src="images/asteroids2.jpg" /></a>
+                  <div class="details-container" id="asteroids-details">
+                    <br/>
+                    <p class="centered">
+                      <a class="centered small" href="https://github.com/marvinsjsu/Asteroids" title="asteroids github link" target="_blank">
+                        <img src="images/github.png"/>
+                      </a>
+                      <a class="centered medium" href="http://projects.marvymarv.info/Asteroids/" title="asteroids link" target="_blank">
+                        <img src="images/asteroid.png">
+                      </a>
+                    </p>
+
+                    <h4 class="small centered">Components</h4>
+                    <ul class="list-group small">
+                      <li class="list-group-item">Canvas 2D</li>
+                      <li class="list-group-item">Object-Oriented Javascript</li>
+                      <li class="list-group-item">jQuery</li>
+                      <li class="list-group-item">keyboard.js</li>
+                    </ul>
                   </div>
-                  <div class="panel-footer centered">Trellino</div>
                 </div>
+                <div class="col-xs-6">
+                  <h4>asteroids</h4>
 
-              </div>
-
-              <div class="col-xs-4">
-
-                <div class="panel panel-default shadow">
-                  <div class="panel-body">
-                    <div class="thumbnail">
-                      <img src="images/kicksmix.jpg" alt="...">
-                    </div>
-                    <div class="caption">
-                      <p class="small">
-                        Arcade game classic!! A ship finds itself in the middle of Asteroids
-                        ready to wreck it. The player must avoid and/or shoot the asteroids down.
-                        <br/>
-                        <button target="asteroids-details" type="button" class="btn btn-link btn-small details-toggle">more details ...</button>
-                      </p>
-                      <div class="details-container" id="asteroids-details">
-                        <h4 class="small centered">Components</h4>
-                        <ul class="list-group small">
-                          <li class="list-group-item">2D Canvas</li>
-                          <li class="list-group-item">Rails API / jBuilder</li>
-                          <li class="list-group-item">Backbone (CompositeView and SubViews)</li>
-                        </ul>
-                        <p class="centered">
-                          <a class="centered small" href="https://github.com/marvinsjsu/KicksMix" title="my github link">
-                            <img src="images/github.png"/>
-                          </a>
-                          <a class="centered medium" href="http://www.kicksmix.in" title="kicksmix link">
-                            <img src="images/logo.png">
-                          </a>
-                        </p>
-                      </div>
-                    </div>
+                  <p class="small">
+                     It's a nod to the classic arcade game, Asteroids.  A ship finds itself in the middle of Asteroids
+                     ready to be wrecked. The player must avoid and/or shoot the asteroids down, but watch out, some of
+                     the asteroids grow and can explode and destroy your ship.
+                     <br/>
+                     <button target="asteroids-details" type="button" class="btn btn-link btn-small details-toggle">more details ...</button>
+                  </p>
+                  <div class="details-container" id="asteroids-details-summary">
+                    <h4 class="small centered">Summary</h4>
+                    <p class="small">
+                      This was an awesome project as it's the first game I've written for a browser.  Being able to explore and
+                      play with HTML5's Canvas and write the components in Object-Oriented Javascript is what prompted me to focus
+                      on Javascript as the language I have to get down and dirty with.  In this project, OOP Javascript was implemented
+                      utilizing techniques for prototypal inheritance using a "surrogate" class and also namespacing, following the Module pattern.
+                    </p>
                   </div>
-                  <div class="panel-footer centered">Asteroids</div>
-                </div>
-
-              </div>
-              <div class="col-xs-4">
-
-                <div class="panel panel-default shadow">
-                  <div class="panel-body">
-                    <div class="thumbnail">
-                      <img src="images/kicksmix.jpg" alt="...">
-                    </div>
-                    <div class="caption">
-                      <p class="small">
-                        Another classic, where the snake must avoid having contact with it's body while it adds length
-                        by swallowing a "meal".
-                        <br/>
-                        <button target="snake-details" type="button" class="btn btn-link btn-small details-toggle">more details ...</button>
-                      </p>
-                      <div class="details-container" id="snake-details">
-                        <h4 class="small centered">Components</h4>
-                        <ul class="list-group small">
-                          <li class="list-group-item">2D Canvas</li>
-                          <li class="list-group-item">Rails API / jBuilder</li>
-                          <li class="list-group-item">Backbone (CompositeView and SubViews)</li>
-                        </ul>
-                        <p class="centered">
-                          <a class="centered small" href="https://github.com/marvinsjsu/KicksMix" title="my github link">
-                            <img src="images/github.png"/>
-                          </a>
-                          <a class="centered medium" href="http://www.kicksmix.in" title="kicksmix link">
-                            <img src="images/logo.png">
-                          </a>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="panel-footer centered">Snake</div>
-                </div>
-
-              </div>
-
-              <div class="col-xs-4">
-
-                <div class="panel panel-default shadow">
-                  <div class="panel-body">
-                    <div class="thumbnail">
-                      <img src="images/kicksmix.jpg" alt="...">
-                    </div>
-                    <div class="caption">
-                      <p class="small">
-                        This is a game used to introduce the concept of recursion in CS. The goal is to move
-                        all discs to another tower; bigger disc cannot be placed on top of smaller disc.
-                        <br/>
-                        <button target="towersofhanoi-details" type="button" class="btn btn-link btn-small details-toggle">more details ...</button>
-                      </p>
-                      <div class="details-container" id="towersofhanoi-details">
-                        <h4 class="small centered">Components</h4>
-                        <ul class="list-group small">
-                          <li class="list-group-item">2D Canvas</li>
-                          <li class="list-group-item">Rails API / jBuilder</li>
-                          <li class="list-group-item">Backbone (CompositeView and SubViews)</li>
-                        </ul>
-                        <p class="centered">
-                          <a class="centered small" href="https://github.com/marvinsjsu/KicksMix" title="my github link">
-                            <img src="images/github.png"/>
-                          </a>
-                          <a class="centered medium" href="http://www.kicksmix.in" title="kicksmix link">
-                            <img src="images/logo.png">
-                          </a>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="panel-footer centered">Towers of Hanoi</div>
-                </div>
-
-              </div>
-
-              <div class="col-xs-4">
-
-                <div class="panel panel-default shadow">
-                  <div class="panel-body">
-                    <div class="thumbnail">
-                      <img src="images/kicksmix.jpg" alt="...">
-                    </div>
-                    <div class="caption">
-                      <p class="small">
-                        Fun game of tic-tac-toe is an interesting introduction to arrays and matrices.
-                        <br/>
-                        <button target="tictactoe-details" type="button" class="btn btn-link btn-small details-toggle">more details ...</button>
-                      </p>
-                      <div class="details-container" id="tictactoe-details">
-                        <h4 class="small centered">Components</h4>
-                        <ul class="list-group small">
-                          <li class="list-group-item">2D Canvas</li>
-                          <li class="list-group-item">Rails API / jBuilder</li>
-                          <li class="list-group-item">Backbone (CompositeView and SubViews)</li>
-                        </ul>
-                        <p class="centered">
-                          <a class="centered small" href="https://github.com/marvinsjsu/KicksMix" title="my github link">
-                            <img src="images/github.png"/>
-                          </a>
-                          <a class="centered medium" href="http://www.kicksmix.in" title="kicksmix link">
-                            <img src="images/logo.png">
-                          </a>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="panel-footer centered">Tic-Tac-Toe</div>
-                </div>
-
-              </div>
-
-              <div class="col-xs-4">
-
-                <div class="panel panel-default shadow">
-                  <div class="panel-body">
-                    <div class="thumbnail">
-                      <img src="images/kicksmix.jpg" alt="...">
-                    </div>
-                    <div class="caption">
-                      <p class="small">
-                        This project was really about meta-programming. We implemented the ORM features built into to Rails with
-                        how Active Record interacts with the database and the conventions that are followed.
-                        <br/>
-                        <button target="activerecord-details" type="button" class="btn btn-link btn-small details-toggle">more details ...</button>
-                      </p>
-                      <div class="details-container" id="activerecord-details">
-                        <h4 class="small centered">Components</h4>
-                        <ul class="list-group small">
-                          <li class="list-group-item">2D Canvas</li>
-                          <li class="list-group-item">Rails API / jBuilder</li>
-                          <li class="list-group-item">Backbone (CompositeView and SubViews)</li>
-                        </ul>
-                        <p class="centered">
-                          <a class="centered small" href="https://github.com/marvinsjsu/KicksMix" title="my github link">
-                            <img src="images/github.png"/>
-                          </a>
-                          <a class="centered medium" href="http://www.kicksmix.in" title="kicksmix link">
-                            <img src="images/logo.png">
-                          </a>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="panel-footer centered">ActiveRecord Lite</div>
                 </div>
               </div>
+
+
+
+
             </div>
           </div>
           <div id="resume" class="content">
@@ -389,7 +260,7 @@
           <div id="contact" class="content">
 
             <div class="centered small">
-              <a href="mailto:marvinsjsu@gmail.com" target="_blank"><img class="icon" src="images/email.png"/></a>
+              <a href="mailto:marvinsjsu@gmail.com"><img class="icon" src="images/email.png"/></a>
               <a href="http://www.linkedin.com/pub/marvin-mante/2/523/633/" target="_blank"><img class="icon" src="images/linkedin2.png"/></a>
               <a href="https://github.com/marvinsjsu" target="_blank"><img class="icon" src="images/github.png"/></a>
 
@@ -423,6 +294,6 @@
     </div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/main2.js"></script>
   </body>
 </html>

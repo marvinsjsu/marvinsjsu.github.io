@@ -7,9 +7,6 @@ body {
   display: none;
 }
 
-.controls {
-  color: #fff;
-}
 
 .btn-link {
   font-weight: 100;
@@ -36,11 +33,18 @@ a.medium img{
 }
 
 img.icon {
-  width: 35px;
+  width: 28px;
   opacity: 0.65;
-  margin: 10px;
+  margin: 5px;
   margin-bottom: 5px;
 }
+
+img.main-icon {
+  width: 50px;
+  margin: 0px;
+  margin-bottom: 5px;
+}
+
 img.icon:hover {
   opacity: 1;
 }
@@ -52,6 +56,17 @@ img.icon:hover {
   -webkit-box-shadow: 0 8px 6px -6px black;
      -moz-box-shadow: 0 8px 6px -6px black;
           box-shadow: 0 8px 6px -6px black;
+}
+.active {
+  color: orange;
+}
+
+img.project-img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.project-item {
+  margin-bottom: 25px;
 }
 
 .box {
@@ -99,3 +114,17 @@ img.icon:hover {
          -o-transform:skew(8deg) rotate(3deg);
             transform:skew(8deg) rotate(3deg);
 }
+
+.circular {
+  width: 280px;
+  height: 280px;
+  border-radius: 140px;
+  -webkit-border-radius: 140px;
+  -moz-border-radius: 140px;
+  background: url(file://localhost/Users/mante/Documents/App_Academy/projects/MySite/images//marvin.jpg) -350px -200px  no-repeat;
+
+/*  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);*/
+}
+

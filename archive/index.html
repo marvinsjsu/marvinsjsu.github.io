@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Marvin Mante - Web Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif|Muli' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400|Comfortaa:400,300,700|Varela+Round' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-2">
+        </div>
+        <div class="col-xs-8">
+          <div class="head-banner">
+            <br/>
+            <br/>
+
+            <h1><a href="#" class="control" target="myself">Marvin Mante</a></h1>
+
+            <div id="main-navigation" class="btn-group">
+              <!--<button type="button" class="btn btn-link btn-lg">a bit about me</button>-->
+              <button target="projects" type="button" class="btn btn-link btn-md controls">projects</button>
+              <button target="resume" type="button" class="btn btn-link btn-md controls">resume</button>
+              <button target="contact" type="button" class="btn btn-link btn-md controls">contact me</button>
+            </div>
+          </div>
+          <br/>
+          <div id="myself" class="content">
+            <br/>
+            <br/>
+
+            <p>
+              Hello! I'm a web developer falling for Javascript.  I've recently graduated from
+              <a href="http://www.appacademy.io" target="_blank">App Academy</a> in San Francisco, where I completed <a class="control" target="projects" href="#">projects</a>
+              in Ruby, Rails, Javascript, Node, and Backbone.
+              I believe web development is a melding of logic and creativity and the beauty therein is what I'm passionate about.
+            </p>
+          </div>
+
+          <div id="projects" class="content">
+            <div class="row">
+              <div class="col-xs-4">
+
+                <div class="panel panel-default shadow">
+                  <div class="panel-body">
+                    <div class="thumbnail">
+                      <a href="http://www.kicksmix.in" target="_blank"><img src="images/kicksmix.jpg" alt="..."></a>
+                    </div>
+                    <div class="caption">
+                      <p class="small">
+                         Dedicated to a subculture of shoes.  KicksMix is a social site that promotes the expression of ideas
+                         and conversation on kicks.
+                         <br/>
+                         <button target="kicksmix-details" type="button" class="btn btn-link btn-small details-toggle">more details ...</button>
+                      </p>
+                      <div class="details-container" id="kicksmix-details">
+                        <h4 class="small centered">Components</h4>
+                        <ul class="list-group small">
+                          <li class="list-group-item">User authentication and session management</li>
+                          <li class="list-group-item">Rails API / jBuilder</li>
+                          <li class="list-group-item">Backbone (CompositeView and SubViews)</li>
+                          <li class="list-group-item">jQuery / jQuery UI / Bootstrap (Simplex theme)</li>
+                          <li class="list-group-item">Paperclip, Heroku, and S3 (photo storage)</li>
+                        </ul>
+                        <p class="centered">
+                          <a class="centered small" href="https://github.com/marvinsjsu/KicksMix" title="my github link">
+                            <img src="images/github.png"/>
+                          </a>
+                          <a class="centered medium" href="http://www.kicksmix.in" title="kicksmix link">
+                            <img src="images/logo.png">
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel-footer centered">KicksMix</div>
+                </div>
+              </div>
+
+              <div class="col-xs-4">
+
+                <div class="panel panel-default shadow">
+                  <div class="panel-body">
+                    <div class="thumbnail">
+                      <img src="images/kicksmix.jpg" alt="...">
+                    </div>
+                    <div class="caption">
+                      <p class="small">
+                         A clone of the task management app Trello. This version takes the basic functionality of
+                         creating boards, adding cards, items, and lists.
+                         <br/>
+                         <button target="trellino-details" type="button" class="btn btn-link btn-small details-toggle">more details ...</button>
+                      </p>
+                      <div class="details-container" id="trellino-details">
+                        <h4 class="small centered">Components</h4>
+                        <ul class="list-group small">
+                          <li class="list-group-item">User authentication and session management</li>
+                          <li class="list-group-item">Rails API / jBuilder</li>
+                          <li class="list-group-item">Backbone (CompositeView and SubViews)</li>
+                          <li class="list-group-item">jQuery / jQuery UI / Bootstrap (Simplex theme)</li>
+                          <li class="list-group-item">Paperclip, Heroku, and S3 (photo storage)</li>
+                        </ul>
+                        <p class="centered">
+                          <a class="centered small" href="https://github.com/marvinsjsu/KicksMix" title="my github link">
+                            <img src="images/github.png"/>
+                          </a>
+                          <a class="centered medium" href="http://www.kicksmix.in" title="kicksmix link">
+                            <img src="images/logo.png">
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel-footer centered">Trellino</div>
+                </div>
+
+              </div>
+
+              <div class="col-xs-4">
+
+                <div class="panel panel-default shadow">
+                  <div class="panel-body">
+                    <div class="thumbnail">
+                      <img src="images/kicksmix.jpg" alt="...">
+                    </div>
+                    <div class="caption">
+                      <p class="small">
+                        Arcade game classic!! A ship finds itself in the middle of Asteroids
+                        ready to wreck it. The player must avoid and/or shoot the asteroids down.
+                        <br/>
+                        <button target="asteroids-details" type="button" class="btn btn-link btn-small details-toggle">more details ...</button>
+                      </p>
+                      <div class="details-container" id="asteroids-details">
+                        <h4 class="small centered">Components</h4>
+                        <ul class="list-group small">
+                          <li class="list-group-item">2D Canvas</li>
+                          <li class="list-group-item">Rails API / jBuilder</li>
+                          <li class="list-group-item">Backbone (CompositeView and SubViews)</li>
+                        </ul>
+                        <p class="centered">
+                          <a class="centered small" href="https://github.com/marvinsjsu/KicksMix" title="my github link">
+                            <img src="images/github.png"/>
+                          </a>
+                          <a class="centered medium" href="http://www.kicksmix.in" title="kicksmix link">
+                            <img src="images/logo.png">
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel-footer centered">Asteroids</div>
+                </div>
+
+              </div>
+              <div class="col-xs-4">
+
+                <div class="panel panel-default shadow">
+                  <div class="panel-body">
+                    <div class="thumbnail">
+                      <img src="images/kicksmix.jpg" alt="...">
+                    </div>
+                    <div class="caption">
+                      <p class="small">
+                        Another classic, where the snake must avoid having contact with it's body while it adds length
+                        by swallowing a "meal".
+                        <br/>
+                        <button target="snake-details" type="button" class="btn btn-link btn-small details-toggle">more details ...</button>
+                      </p>
+                      <div class="details-container" id="snake-details">
+                        <h4 class="small centered">Components</h4>
+                        <ul class="list-group small">
+                          <li class="list-group-item">2D Canvas</li>
+                          <li class="list-group-item">Rails API / jBuilder</li>
+                          <li class="list-group-item">Backbone (CompositeView and SubViews)</li>
+                        </ul>
+                        <p class="centered">
+                          <a class="centered small" href="https://github.com/marvinsjsu/KicksMix" title="my github link">
+                            <img src="images/github.png"/>
+                          </a>
+                          <a class="centered medium" href="http://www.kicksmix.in" title="kicksmix link">
+                            <img src="images/logo.png">
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel-footer centered">Snake</div>
+                </div>
+
+              </div>
+
+              <div class="col-xs-4">
+
+                <div class="panel panel-default shadow">
+                  <div class="panel-body">
+                    <div class="thumbnail">
+                      <img src="images/kicksmix.jpg" alt="...">
+                    </div>
+                    <div class="caption">
+                      <p class="small">
+                        This is a game used to introduce the concept of recursion in CS. The goal is to move
+                        all discs to another tower; bigger disc cannot be placed on top of smaller disc.
+                        <br/>
+                        <button target="towersofhanoi-details" type="button" class="btn btn-link btn-small details-toggle">more details ...</button>
+                      </p>
+                      <div class="details-container" id="towersofhanoi-details">
+                        <h4 class="small centered">Components</h4>
+                        <ul class="list-group small">
+                          <li class="list-group-item">2D Canvas</li>
+                          <li class="list-group-item">Rails API / jBuilder</li>
+                          <li class="list-group-item">Backbone (CompositeView and SubViews)</li>
+                        </ul>
+                        <p class="centered">
+                          <a class="centered small" href="https://github.com/marvinsjsu/KicksMix" title="my github link">
+                            <img src="images/github.png"/>
+                          </a>
+                          <a class="centered medium" href="http://www.kicksmix.in" title="kicksmix link">
+                            <img src="images/logo.png">
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel-footer centered">Towers of Hanoi</div>
+                </div>
+
+              </div>
+
+              <div class="col-xs-4">
+
+                <div class="panel panel-default shadow">
+                  <div class="panel-body">
+                    <div class="thumbnail">
+                      <img src="images/kicksmix.jpg" alt="...">
+                    </div>
+                    <div class="caption">
+                      <p class="small">
+                        Fun game of tic-tac-toe is an interesting introduction to arrays and matrices.
+                        <br/>
+                        <button target="tictactoe-details" type="button" class="btn btn-link btn-small details-toggle">more details ...</button>
+                      </p>
+                      <div class="details-container" id="tictactoe-details">
+                        <h4 class="small centered">Components</h4>
+                        <ul class="list-group small">
+                          <li class="list-group-item">2D Canvas</li>
+                          <li class="list-group-item">Rails API / jBuilder</li>
+                          <li class="list-group-item">Backbone (CompositeView and SubViews)</li>
+                        </ul>
+                        <p class="centered">
+                          <a class="centered small" href="https://github.com/marvinsjsu/KicksMix" title="my github link">
+                            <img src="images/github.png"/>
+                          </a>
+                          <a class="centered medium" href="http://www.kicksmix.in" title="kicksmix link">
+                            <img src="images/logo.png">
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel-footer centered">Tic-Tac-Toe</div>
+                </div>
+
+              </div>
+
+              <div class="col-xs-4">
+
+                <div class="panel panel-default shadow">
+                  <div class="panel-body">
+                    <div class="thumbnail">
+                      <img src="images/kicksmix.jpg" alt="...">
+                    </div>
+                    <div class="caption">
+                      <p class="small">
+                        This project was really about meta-programming. We implemented the ORM features built into to Rails with
+                        how Active Record interacts with the database and the conventions that are followed.
+                        <br/>
+                        <button target="activerecord-details" type="button" class="btn btn-link btn-small details-toggle">more details ...</button>
+                      </p>
+                      <div class="details-container" id="activerecord-details">
+                        <h4 class="small centered">Components</h4>
+                        <ul class="list-group small">
+                          <li class="list-group-item">2D Canvas</li>
+                          <li class="list-group-item">Rails API / jBuilder</li>
+                          <li class="list-group-item">Backbone (CompositeView and SubViews)</li>
+                        </ul>
+                        <p class="centered">
+                          <a class="centered small" href="https://github.com/marvinsjsu/KicksMix" title="my github link">
+                            <img src="images/github.png"/>
+                          </a>
+                          <a class="centered medium" href="http://www.kicksmix.in" title="kicksmix link">
+                            <img src="images/logo.png">
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel-footer centered">ActiveRecord Lite</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="resume" class="content">
+            <div class="row">
+              <div class="col-xs-4"></div>
+
+              <div class="col-xs-4 medium centered">
+               <a class="icon" href="files/Marvin_Mante_resume.pdf"><!--<img class="icon" src="images/pdf.png" alt="resume in pdf"/> --> pdf</a> and
+                <a class="icon" href="files/Marvin_Mante_resume.docx"><!--<img class="icon" src="images/word4.png" alt="resume in word format"/> --> word</a> versions
+              </div>
+
+            </div>
+            <div class="row">
+              <div id="resume-content" class="col-xs-12">
+                <div class="box effect7">
+                  <div class="row">
+                    <div class="col-xs-5">
+                      <h5>
+                         39939 Stevenson Common Apt. 1121<br/>
+                        Fremont, CA 94538
+                      </h5>
+                    </div>
+                    <div class="col-xs-3"></div>
+                    <div class="col-xs-4">
+                      <h5>
+                        Phone: (510) 552-4447<br/>
+                        Email: marvinsjsu@gmail.com
+                      </h5>
+                    </div>
+                  </div>
+                  <h3 class="centered">Marvin Mante</h3>
+
+                  <br/>
+                  <h4>Recent Project</h4>
+                  <h5>
+                    Social Website - www.kicksmix.in <span class="date">(2014)</span>
+                  </h5>
+                  <ul>
+                    <li>Implemented Rails API with composite view in Backbone for client-side</li>
+                    <li>Built nested comments functionality (recursion in jBuilder templates/partials)</li>
+                    <li>Utilized Paperclip and AWS S3 for image upload and storage</li>
+                    <li>Designed website using Bootstrap and Simplex theme</li>
+                  </ul>
+                  <br/>
+                  <h4>Previous Work</h4>
+                  <h5>
+                    Data Center Operations Lead - A100 (subsidiary of Amazon), Hayward, CA <span class="date">(2010 to 2014)</span>
+                  </h5>
+                  <ul>
+                    <li>Deployed AWS data centers in North America, Brazil, and Australia</li>
+                    <li>Wrote Rack-Down Response documentation and training guides</li>
+                    <li>Interviewed candidates and trained new operations techs</li>
+                    <li>Coordinated teams of up to seven techs and reduced trouble ticket queues for problematic sites with over 120+ tickets</li>
+                  </ul>
+                  <h5>
+                    Associate Software Engineer - Orbital Sciences, Mountain View, CA <span class="date">(2007 to 2010)</span>
+                  </h5>
+                  <ul>
+                    <li>Designed and implemented internal SOFIA Portal for managing documents and integration with Windchill</li>
+                    <li>Developed automated process for migrating hard-copy documents for storage in Windchill</li>
+                    <li>Create tools: Document Numbering Scheme, Search interface for eXist database</li>
+                  </ul>
+                  <h5>
+                    Data Center Technician - DataReturn (Terremark), Pleasanton, CA <span class="date">(2005 to 2007)</span>
+                  </h5>
+                  <ul>
+                    <li>Built hosts per customer specifications</li>
+                    <li>Maintained and monitored hosts and network activity; maximizing system uptime and availability</li>
+                    <li>Coordinated with System Administrators and Network Engineers for migration projects and system upgrades</li>
+                    <li>Conducted daily facility's checks of HVAC and Generator systems</li>
+                  </ul>
+                  <br/>
+                  <h4>Education</h4>
+                  <h5>
+                    App Academy, San Francisco, CA, 2014
+                  </h5>
+                  <h5>
+                    San Jose State University, San Jose, CA <br/>
+                    Bachelor of Science in Computer Science, 2007
+                  </h5>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="contact" class="content">
+
+            <div class="centered small">
+              <a href="mailto:marvinsjsu@gmail.com" target="_blank"><img class="icon" src="images/email.png"/></a>
+              <a href="http://www.linkedin.com/pub/marvin-mante/2/523/633/" target="_blank"><img class="icon" src="images/linkedin2.png"/></a>
+              <a href="https://github.com/marvinsjsu" target="_blank"><img class="icon" src="images/github.png"/></a>
+
+            </div>
+              <br/>
+            <div class="row">
+              <div class="col-xs-10 col-xs-offset-1">
+                <div class="panel panel-default shadow">
+                  <div class="panel-body">
+                    <form role="form">
+                      <div class="form-group">
+                        <textarea name="message" class="form-control" id="message" cols="50" rows="10" placeholder="message"></textarea>
+                      </div>
+                      <div class="form-group">
+                        <input type="email" class="form-control" placeholder="your email">
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="subject">
+                      </div>
+
+                      <button type="submit" class="btn btn-default">send</button>
+                    </form>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

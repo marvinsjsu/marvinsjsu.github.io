@@ -7,11 +7,6 @@ body {
   display: none;
 }
 
-
-.btn-link {
-  font-weight: 100;
-}
-
 .head-banner, .centered {
   text-align: center;
 }
@@ -32,11 +27,18 @@ a.medium img{
   width: 60px;
 }
 
-img.icon {
-  width: 28px;
+img.icon, img.icon-display{
+  width: 40px;
   opacity: 0.65;
   margin: 5px;
+  margin-top: 5px;
   margin-bottom: 5px;
+}
+
+img.icon-display{
+  width: 24px;
+  opacity: 1;
+  margin: 2px;
 }
 
 img.main-icon {
@@ -79,6 +81,11 @@ img.project-img {
   font-size: 14px;
 }
 
+p.indent {
+  text-indent: 25px;
+  margin-bottom: 20px;
+}
+
 /*==================================================
  * Effect 7
  * ===============================================*/
@@ -116,12 +123,17 @@ img.project-img {
 }
 
 .circular {
-  width: 280px;
-  height: 280px;
-  border-radius: 140px;
-  -webkit-border-radius: 140px;
-  -moz-border-radius: 140px;
-  background: url(file://localhost/Users/mante/Documents/App_Academy/projects/MySite/images//marvin.jpg) -350px -200px  no-repeat;
+/*  position: absolute;
+  top: 10px;
+  right: 20px;*/
+  width: 260px;
+  height: 260px;
+  border-radius: 130px;
+  -webkit-border-radius: 130px;
+  -moz-border-radius: 130px;
+  background: url(../images/marvin_solo.jpg) -5px -30px no-repeat;
+  background-size: 270px;
+  margin-bottom: 10px;
 
 /*  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
   -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);

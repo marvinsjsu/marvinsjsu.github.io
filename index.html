@@ -8,55 +8,56 @@
     <link href='http://fonts.googleapis.com/css?family=PT+Serif|Muli' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400|Comfortaa:400,300,700|Varela+Round' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/main2.css">
+    <link rel="icon" type="image/ico" href="images/bluem.ico">
   </head>
   <body>
-
-    <nav class="navbar navbar-default" role="navigation">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <ul class="nav navbar-nav navbar-left">
-            <li><a class="controls" target="myself" href="#"><img class="main-icon" src="images/bluem.png"/>arvin  <img class="main-icon" src="images/greenm.png"/> ante</a></li>
-          </ul>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a class="controls" target="projects" href="#">projects</a></li>
-            <li><a class="controls" target="resume" href="#">resume</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
-
     <div class="container-fluid">
-
       <div class="row">
         <div class="col-xs-2">
+
         </div>
         <div class="col-xs-8">
           <br/>
-          <div id="myself" class="content">
+          <div id="myself" class="content row">
             <br/>
             <br/>
             <br/>
-            <p>
-              Hello! I'm a web developer falling for Javascript.  I've recently graduated from
-              <a href="http://www.appacademy.io" target="_blank">App Academy</a> in San Francisco, where I completed <a class="control" target="projects" href="#">projects</a>
-              in Ruby, Rails, Javascript, Node, and Backbone.
-              I believe web development is a melding of logic and creativity and the beauty therein is what I'm passionate about.
-            </p>
+            <div class="col-xs-8">
+              <br/>
+              <p class="indent">
+                Hello! I'm Marvin, a web developer in the bay area.  I've recently graduated from
+                <a href="http://www.appacademy.io" target="_blank">App Academy</a> in San Francisco, where I completed <a class="control" target="projects" href="#">projects</a>
+                in Ruby, Rails, Javascript, Node, Backbone, HTML5, and CSS3.
+              </p>
+
+              <p class="indent">
+                Web development is melding logic and creativity and the beauty therein is what I'm passionate about.
+              </p>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a class="controls" target="projects" href="#">projects</a></li>
+                <li><a class="controls" target="resume" href="#">resume</a></li>
+                <!-- <li><a class="controls" target="me" href="#">my story</a></li> -->
+              </ul>
+            </div>
+            <div class="col-xs-4">
+              <div class="circular"></div>
+            </div>
             <br/>
-            <div class="centered small">
+            <div id="external-links" class="centered small">
+
               <a href="mailto:marvinsjsu@gmail.com"><img class="icon" src="images/email.png"/></a>
               <a href="http://www.linkedin.com/pub/marvin-mante/2/523/633/" target="_blank"><img class="icon" src="images/linkedin2.png"/></a>
               <a href="https://github.com/marvinsjsu" target="_blank"><img class="icon" src="images/github.png"/></a>
             </div>
           </div>
-
-
           <div id="projects" class="content">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a class="controls" target="resume" href="#">resume</a></li>
+              <li><a class="controls" target="myself" href="#">intro</a></li>
+            </ul>
+            <br/>
+            <br/>
+            <br/>
             <div class="row">
               <div class="project-item row">
                 <div class="col-xs-6">
@@ -85,12 +86,18 @@
                 </div>
                 <div class="col-xs-6">
                   <h4>kicksmix</h4>
-
+                  <img class="icon-display" src="images/ruby.png"/>
+                  <img class="icon-display" src="images/rails.png"/>
+                  <img class="icon-display" src="images/javascript.png"/>
+                  <img class="icon-display" src="images/backbone.png"/>
+                  <img class="icon-display" src="images/html5.png"/>
+                  <img class="icon-display" src="images/css3.png"/>
+                  <br/>
                   <p class="small">
                      Dedicated to a subculture of shoes.  KicksMix is a social site that promotes the expression of ideas
                      and conversation through kicks.
                      <br/>
-                     <button target="kicksmix-details" type="button" class="btn btn-link btn-small details-toggle">more details ...</button>
+                     <button target="kicksmix-details" type="button" class="btn btn-link btn-small details-toggle icon">more details ...</button>
                   </p>
                   <div class="details-container" id="kicksmix-details-summary">
                     <h4 class="small centered">Summary</h4>
@@ -126,7 +133,7 @@
 
               <div class="project-item row">
                 <div class="col-xs-6">
-                  <a href="http://www.marvinmante.io/Asteroids" target="_blank"><img class="project-img shadow" src="images/asteroids2.jpg" /></a>
+                  <a href="http://projects.marvymarv.info/Asteroids" target="_blank"><img class="project-img shadow" src="images/asteroids2.jpg" /></a>
                   <div class="details-container" id="asteroids-details">
                     <br/>
                     <p class="centered">
@@ -149,13 +156,15 @@
                 </div>
                 <div class="col-xs-6">
                   <h4>asteroids</h4>
-
+                  <img class="icon-display" src="images/html5.png"/>
+                  <img class="icon-display" src="images/javascript.png"/>
+                  <br/>
                   <p class="small">
                      It's a nod to the classic arcade game, Asteroids.  A ship finds itself in the middle of Asteroids
                      ready to be wrecked. The player must avoid and/or shoot the asteroids down, but watch out, some of
                      the asteroids grow and can explode and destroy your ship.
                      <br/>
-                     <button target="asteroids-details" type="button" class="btn btn-link btn-small details-toggle">more details ...</button>
+                     <button target="asteroids-details" type="button" class="btn btn-link btn-small details-toggle icon">more details ...</button>
                   </p>
                   <div class="details-container" id="asteroids-details-summary">
                     <h4 class="small centered">Summary</h4>
@@ -175,12 +184,19 @@
             </div>
           </div>
           <div id="resume" class="content">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a class="controls" target="projects" href="#">projects</a></li>
+              <li><a class="controls" target="myself" href="#">intro</a></li>
+            </ul>
+            <br/>
+            <br/>
+            <br/>
             <div class="row">
               <div class="col-xs-4"></div>
 
               <div class="col-xs-4 medium centered">
-               <a class="icon" href="files/Marvin_Mante_resume.pdf"><!--<img class="icon" src="images/pdf.png" alt="resume in pdf"/> --> pdf</a> and
-                <a class="icon" href="files/Marvin_Mante_resume.docx"><!--<img class="icon" src="images/word4.png" alt="resume in word format"/> --> word</a> versions
+               <a class="icon" href="files/Marvin_Mante.pdf">pdf</a> and
+                <a class="icon" href="files/Marvin_Mante.docx">word</a> versions
               </div>
 
             </div>
@@ -211,11 +227,28 @@
                   </h5>
                   <ul>
                     <li>Implemented Rails API with composite view in Backbone for client-side</li>
-                    <li>Built nested comments functionality (recursion in jBuilder templates/partials)</li>
+                    <li>Created models to be polymorphic as "Commentable" to avoid adding comments tables for each model</li>
+                    <li>Built infinitely-nested comments functionality (recursion in jBuilder templates/partials)</li>
                     <li>Utilized Paperclip and AWS S3 for image upload and storage</li>
                     <li>Designed website using Bootstrap and Simplex theme</li>
                   </ul>
-                  <br/>
+
+                  <h5>
+                    Javascript / Canvas Game - Asteroids <span class="date">(2014)</span>
+                  </h5>
+                  <ul>
+                    <li>Implemented in Object-Oriented Javascript (Prototypal inheritance)</li>
+                    <li>Utilized HTML5 Canvas 2D API for rendering game objects and keyboard.js for directional and firing controls</li>
+                    <li>Designed the game with Asteroid collision and explosion detection and view wrapping</li>
+                  </ul>
+
+                  <h4>Skills</h4>
+                  <p class="indent">
+                    Ruby, Ruby on Rails, Javascript, jQuery, Backbone.js, SQL, Git, HTML, CSS, Express (learning)
+                    <br/>
+                  </p>
+
+
                   <h4>Previous Work</h4>
                   <h5>
                     Data Center Operations Lead - A100 (subsidiary of Amazon), Hayward, CA <span class="date">(2010 to 2014)</span>
@@ -258,12 +291,10 @@
             </div>
           </div>
           <div id="contact" class="content">
-
             <div class="centered small">
               <a href="mailto:marvinsjsu@gmail.com"><img class="icon" src="images/email.png"/></a>
               <a href="http://www.linkedin.com/pub/marvin-mante/2/523/633/" target="_blank"><img class="icon" src="images/linkedin2.png"/></a>
               <a href="https://github.com/marvinsjsu" target="_blank"><img class="icon" src="images/github.png"/></a>
-
             </div>
               <br/>
             <div class="row">

@@ -1,7 +1,9 @@
 $(function(){
 
   $(".content").hide("fast", function(){
-    $("#myself").fadeIn(2000);
+    $("#myself").fadeIn(2000, function(){
+      $("#external-links").fadeIn("slow");
+    });
   });
 
 

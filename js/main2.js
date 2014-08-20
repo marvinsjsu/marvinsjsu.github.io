@@ -1,9 +1,18 @@
 $(function(){
 
-  $(".content").hide("fast", function(){
+  $(".tooltip-item").tooltip({"animation": true});
+
+  $(".content, .controls").hide("fast", function(){
     $("#myself").fadeIn(2000, function(){
       $("#external-links").fadeIn("slow");
+      $(".controls").fadeIn("slow").addClass("hatch");
     });
+  });
+
+  $("a.external-link").hover(function() {
+    $(this).addClass("float");
+  }, function() {
+    $(this).removeClass("float");
   });
 
 

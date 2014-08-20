@@ -35,6 +35,17 @@ img.icon, img.icon-display{
   margin-bottom: 5px;
 }
 
+a:hover img.icon {
+
+}
+
+.tooltip-inner {
+  font-size: 1.3em;
+  color: #fff;
+  text-align: left;
+}
+
+
 img.icon-display{
   width: 24px;
   opacity: 1;
@@ -122,6 +133,8 @@ p.indent {
             transform:skew(8deg) rotate(3deg);
 }
 
+
+
 .circular {
 /*  position: absolute;
   top: 10px;
@@ -135,8 +148,8 @@ p.indent {
   background-size: 270px;
   margin-bottom: 10px;
 
+
+
 /*  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
   -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);*/
-}
-
+  -moz-box-shad

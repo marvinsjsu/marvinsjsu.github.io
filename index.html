@@ -8,6 +8,7 @@
     <link href='http://fonts.googleapis.com/css?family=PT+Serif|Muli' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400|Comfortaa:400,300,700|Varela+Round' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/main2.css">
+    <link rel="stylesheet" href="css/animation.css">
     <link rel="icon" type="image/ico" href="images/bluem.ico">
   </head>
   <body>
@@ -26,7 +27,7 @@
               <br/>
               <p class="indent">
                 Hello! I'm Marvin, a web developer in the bay area.  I've recently graduated from
-                <a href="http://www.appacademy.io" target="_blank">App Academy</a> in San Francisco, where I completed <a class="control" target="projects" href="#">projects</a>
+                <a class="tooltip-item" data-toggle="tooltip" title="App Academy is a highly-selective twelve-week immersive development course focusing on Ruby on Rails, Javascript, jQuery, and Backbone development." data-placement="top" href="http://www.appacademy.io" target="_blank">App Academy</a> in San Francisco, where I completed <a class="control" target="projects" href="#">projects</a>
                 in Ruby, Rails, Javascript, Node, Backbone, HTML5, and CSS3.
               </p>
 
@@ -41,13 +42,13 @@
             </div>
             <div class="col-xs-4">
               <div class="circular"></div>
-            </div>
-            <br/>
-            <div id="external-links" class="centered small">
+              <br/>
+              <div id="external-links" class="centered small">
 
-              <a href="mailto:marvinsjsu@gmail.com"><img class="icon" src="images/email.png"/></a>
-              <a href="http://www.linkedin.com/pub/marvin-mante/2/523/633/" target="_blank"><img class="icon" src="images/linkedin2.png"/></a>
-              <a href="https://github.com/marvinsjsu" target="_blank"><img class="icon" src="images/github.png"/></a>
+                <a class="tooltip-item" data-placement="left" data-toggle="tooltip" title="If you have any questions or comments, please feel free to send me a message." href="mailto:marvinsjsu@gmail.com"><img class="icon slideRight" src="images/email.png"/></a>
+                <a class="tooltip-item" data-placement="bottom" data-toggle="tooltip" title="Visit my LinkedIn profile to see what I've done." href="http://www.linkedin.com/pub/marvin-mante/2/523/633/" target="_blank"><img class="icon slideUp" src="images/linkedin2.png"/></a>
+                <a class="tooltip-item" data-placement="right" data-toggle="tooltip" title="Checkout my code on Github." href="https://github.com/marvinsjsu" target="_blank"><img class="icon slideLeft" src="images/github.png"/></a>
+              </div>
             </div>
           </div>
           <div id="projects" class="content">
